@@ -1,0 +1,20 @@
+//parallax with css
+.parallax_section {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  //   position: relative;
+  .parallax_text {
+    font-size: 60px;
+    position: absolute;
+    top: 60%;
+    margin-top: -15px;
+    left: 0;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+.parallax_image_first {
+  background-image: url("../images/banner.jpg");
+}

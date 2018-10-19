@@ -1,0 +1,15 @@
+//fonts
+
+//Gotham Light
+
+@font-face {
+  font-family: "GothamLight";
+  src: url("/../vhosts/gulp-assignment-1/fonts/GothamLight.eot")
+      format("embedded-opentype"),
+    url("/../vhosts/gulp-assignment-1/fonts/GothamLight.woff") format("woff"),
+    url("/../vhosts/gulp-assignment-1/fonts/GothamLight.ttf") format("truetype"),
+    url("/../vhosts/gulp-assignment-1/fonts/GothamLight.svg#GothamLight")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

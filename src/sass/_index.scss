@@ -1,0 +1,27 @@
+//index page styles
+
+.cards {
+  text-align: center;
+  padding: 20px;
+}
+.card-img-wrapper {
+  width: 100px;
+  margin: 0 auto;
+}
+.header-banner {
+  margin-bottom: 30px;
+  .container-col-l {
+    padding: 0px;
+  }
+}
+.main-section {
+  margin-bottom: 30px;
+  .container-col-m-3 {
+    @include mq("md", "max") {
+      margin-bottom: 30px;
+    }
+  }
+}
+header {
+  margin-bottom: 30px;
+}
