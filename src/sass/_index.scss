@@ -1,27 +1,218 @@
 //index page styles
+.right--block {
+  justify-content: flex-end;
+}
+.left--block {
+  justify-content: flex-start;
+}
+main {
+  .card {
+    border-radius: 0px;
+    color: $white;
+    padding: 30px 50px;
+  }
+  .col-md-4 {
+    padding: 0;
+  }
+  h3.text-center {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 34px;
+    max-width: 800px;
+    word-spacing: 2px;
+    @extend %margin-auto;
+  }
+  nav {
+    ul {
+      li {
+        padding: 0px 25px;
+        a {
+          color: #b2b2b2;
+          font-size: 20px;
+          &.active {
+            color: $black;
+            border-bottom: 5px solid #7fcded;
+          }
+        }
+      }
+    }
+  }
+  .right--block {
+    .content-block-bg-wrapper {
+      .content-block-bg-1 {
+        background-image: url("../src/images/bg-1.svg");
+      }
+      .content-block-bg-2 {
+        background-image: url("../src/images/preg-bg.png");
+        z-index: -1;
+      }
+    }
+    .col-md-4 {
+      right: 10%;
+    }
+  }
+  .left--block {
+    .content-block-bg-wrapper {
+      height: 550px;
+      left: 25%;
+      .content-block-bg-1 {
+        background-image: url("../src/images/planning.png");
+      }
+      // .content-block-bg-2 {
+      //   background-image: url("../src/images/planning-bg.png");
+      //   // z-index: -1;
+      // }
+    }
+    .col-md-4 {
+      left: 10%;
+    }
+  }
+  .content-block-bg-wrapper {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+  }
+  .content-block-bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-.cards {
-  text-align: center;
-  padding: 20px;
-}
-.card-img-wrapper {
-  width: 100px;
-  margin: 0 auto;
-}
-.header-banner {
-  margin-bottom: 30px;
-  .container-col-l {
-    padding: 0px;
+  // .new-parent-bg-3 {
+  //   background-image: url("../src/images/plant.svg");
+  // }
+  .content-block {
+    h4 {
+      font-size: 36px;
+    }
+  }
+  .content-row {
+    margin-top: 100px;
+    .col-md-4 {
+      display: flex;
+      align-items: center;
+    }
   }
 }
-.main-section {
-  margin-bottom: 30px;
-  .container-col-m-3 {
-    @include mq("md", "max") {
+
+.left--block--bg {
+  background-image: url("../src/images/pattern-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // bottom: -27%;
+  // right: -10%;
+  width: 95%;
+  height: 75%;
+  bottom: 0%;
+  right: -7%;
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    bottom: -35%;
+    width: 100%;
+    height: 90%;
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+    bottom: -7%;
+  }
+  @media screen and (min-width: 1700px) and (max-width: 1800px) {
+    bottom: -2%;
+  }
+  @media screen and (min-width: 1800px) {
+    bottom: 0%;
+  }
+  @media screen and (min-width: 2000px) {
+    right: -12%;
+  }
+}
+.why-us-block {
+  width: 100%;
+  .content-block {
+    margin-top: 300px;
+    color: $white;
+  }
+  // .col{
+  //   margin-top: 300px;
+  // }
+  .inline-block {
+    h4 {
       margin-bottom: 30px;
     }
   }
 }
-header {
-  margin-bottom: 30px;
+main {
+  position: relative;
+}
+
+.sub-footer {
+  margin-top: 150px;
+  position: relative;
+  height: 1490px;
+  // margin-bottom: 200px;
+  @media screen and (min-width: 992px) and (max-width: 1700px) {
+    height: 885px;
+  }
+  @media screen and (min-width: 1700px) and (max-width: 1800px) {
+    height: 1000px;
+  }
+  @media screen and (min-width: 1800px) {
+    height: 1100px;
+  }
+}
+
+.options-box {
+  padding: 50px;
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  left: 0;
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    top: 38%;
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+    top: 55%;
+  }
+  @media screen and (min-width: 1600px) and (max-width: 2000px) {
+    top: 60%;
+  }
+  @media screen and (min-width: 2000px) {
+    top: 70%;
+  }
+}
+
+body {
+  overflow-y: hidden;
+}
+.why-us-block {
+  position: absolute;
+  // top: 43%;
+  height: 100%;
+  .content-col {
+    display: flex;
+    align-items: center;
+    left: 10%;
+    max-width: 40%;
+  }
+  // .col-md-8 {
+  //   left: 15.6%;
+  // }
+  .aside--block--col {
+    right: -11%;
+    @media screen and (min-width: 2000px) {
+      right: -11%;
+    }
+  }
+}
+.aside-image {
+  img {
+    width: 100%;
+  }
+}
+
+.copy-right {
+  padding: 30px;
+  color: $white;
 }

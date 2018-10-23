@@ -10,56 +10,70 @@
     <link rel="stylesheet" href="/../vhosts/capital-group/dist/style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid no--padding">
+      <div class="row breadcrum-row bg--black">
         <div class="col-md-4"><a href="#">Other sites: individual ventors</a></div>
         <div class="col-md-8">
-          <ul class="list-inline list-unstyled">
+          <ul class="list-inline list-unstyled text-right">
             <li class="list-inline-item"><a href="#">Contact us</a></li>
             <li class="list-inline-item"><a href="#">Preferences</a></li>
-            <li class="list-inline-item"><a href="#">Login</a></li>
+            <li class="list-inline-item login"><a href="#">Login</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#"><img class="logo" src="../images/logo.png" alt="Logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#"><img class="logo" src="../images/logo.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">my accounts <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="">investments</a></li>
-          <li class="nav-item"><a class="nav-link" href="">insights</a></li>
-          <li class="nav-item"><a class="nav-link" href="">products</a></li>
-          <li class="nav-item"><a class="nav-link" href="">planning</a></li>
-          <li class="nav-item"><a class="nav-link" href="">service &amp; support</a></li>
-          <li class="nav-item"><a class="nav-link" href="">forms    </a></li>
-        </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 no--padding">
+              <div class="search-box">
+                <form>
+                  <input type="search" placeholder="Enter a search or ticker">
+                </form>
+              </div>
+            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">my accounts <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="">investments</a></li>
+              <li class="nav-item"><a class="nav-link" href="">insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="">products</a></li>
+              <li class="nav-item"><a class="nav-link" href="">planning</a></li>
+              <li class="nav-item"><a class="nav-link" href="">service &amp; support</a></li>
+              <li class="nav-item"><a class="nav-link" href="">forms    </a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12"></div>
+      <div class="banner-img"></div>
+      <div class="banner-content-wrapper">
+        <div class="banner-content">
+          <h1>Can i get my kids through college without a mountain of debt?</h1>
+          <p>With CollegeAmerica from capital group, the nation's largest 529 plan,</p>
+          <p>I can</p><a class="scroll-bottom" href="#"><img class="img-fluid" src="../images/mouse-icon.png" alt="scroll to bottom"></a>
         </div>
       </div>
     </section>
     <main>
-      <div class="container">
+      <div class="container slide">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card bg-aquagreen">
+          <div class="col-md-4 zoomIn">
+            <div class="card bg--aquagreen">
               <h2>Learn</h2>
               <p>Choose life stage</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card bg-blue">
+          <div class="col-md-4 zoomIn">
+            <div class="card bg--blue">
               <h2>Learn</h2>
               <p>Choose life stage</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card bg-skyblue">
+          <div class="col-md-4 zoomIn">
+            <div class="card bg--skyblue">
               <h2>Learn</h2>
               <p>Choose life stage</p>
             </div>
@@ -68,7 +82,7 @@
         <div class="row">
           <div class="col-md-12">
             <h3 class="text-center">
-              The first step understanding where you are atright now, and then the planning can begin.</h3>
+              The first step understanding where you are at right now, and then the planning can begin.</h3>
           </div>
         </div>
         <div class="row">
@@ -76,29 +90,137 @@
             <nav>
               <ul class="list-inline list-unstyled">
                 <li class="list-inline-item"><a class="active" href="#">New parent</a></li>
-                <li class="list-inline-item"><a class="active" href="#">Growing family</a></li>
-                <li class="list-inline-item"><a class="active" href="#">Up next, College</a></li>
-                <li class="list-inline-item"><a class="active" href="#">On Campus</a></li>
-                <li class="list-inline-item"><a class="active" href="#">Grand. Parents</a></li>
+                <li class="list-inline-item"><a href="#">Growing family</a></li>
+                <li class="list-inline-item"><a href="#">Up next, College</a></li>
+                <li class="list-inline-item"><a href="#">On Campus</a></li>
+                <li class="list-inline-item"><a href="#">Grand. Parents</a></li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="row new-parent">
-          <div class="content-block right--block">
-            <h4>New parent</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?</p><span>Baby steps, We'll help</span><a href="#">Learn more</a>
+      </div>
+      <div class="container-fluid no--padding">
+        <div class="row right--block content-row">
+          <div class="col-md-8 content-block-bg-wrapper slide">
+            <div class="content-block-bg-1 content-block-bg slideupInLeft"></div>
+            <div class="content-block-bg-2 content-block-bg"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-block">
+              <h4>New parent</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?</p><span>Baby steps, We'll help</span><a href="#">Learn more</a>
+            </div>
           </div>
         </div>
-        <div class="row new-parent">
-          <div class="content-block left--block">
-            <h4>New parent</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?</p><span>Baby steps, We'll help</span><a href="#">Learn more</a>
+        <div class="left--block--bg"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row left--block content-row">
+          <div class="col-md-4">
+            <div class="content-block">
+              <h4>New parent</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?</p><span>Baby steps, We'll help</span><a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="col-md-8 content-block-bg-wrapper slide">
+            <div class="content-block-bg-1 content-block-bg slideInRight"></div>
           </div>
         </div>
       </div>
+      <div class="container-fluid sub-footer no--padding slide">
+        <div class="row why-us-block slideupIn">
+          <div class="col-md-6 col content-col">
+            <div class="content-block">
+              <h4>Why us?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ratione cumque fugiat eos ipsam modi sit. Amet aspernatur totam nihil dolor asperiores. Minima, asperiores perspiciatis quis placeat earum ab maxime.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col no--padding aside--block--col">
+            <div class="aside-block">
+              <div class="aside-image"><img class="img-fluid" src="../images/why-us.jpg" alt="why us?"></div>
+            </div>
+            <div class="options-box bg--white">
+              <div class="inline-block">
+                <h4>Easy to use investment options</h4>
+                <h4>A nationwide plan sponsored by Virgina<sup>sm</sup></h4>
+                <h4>Twice the tax benefits</h4>
+              </div><a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="footer-bg"></div>
+        </div>
+      </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">My Accounts</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">Investments</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">Insights</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Investment</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">Products</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">Planning</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-list-heading">Services &amp; support</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+              <li><a href="#">View portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copy-right bg--black">
+      <div class="container-fluid no--padding">
+        <div class="row">
+          <div class="col-md-12 copy-right-col">
+            <div class="text-center">Copyright @ 2018 Capital Group Corporate Inc.All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="/../vhosts/capital-group/dist/vendors.min.js"></script>
     <script src="/../vhosts/capital-group/dist/main.js"></script>

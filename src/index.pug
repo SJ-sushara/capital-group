@@ -10,33 +10,44 @@ html.no-js(lang="")
         link(rel="stylesheet" href="/../vhosts/capital-group/dist/style.css")
         
     body
-        include includes/_breadcrum
+        include includes/_breadcrum.pug
         include includes/_nav.pug
 
         section.banner
-            .container
-                .row
-                    .col-md-12
-        
+            .banner-img
+
+            //- .border-div.aquagreen-div
+            //- .border-div.blue-div
+            //- .transparent-div
+            .banner-content-wrapper
+                .banner-content
+                    h1 Can i get my kids through college without a mountain of debt?
+
+                    p With CollegeAmerica from capital group, the nation's largest 529 plan,
+
+                    p I can
+
+                    a.scroll-bottom(href="#")
+                        img.img-fluid(src="../images/mouse-icon.png" alt="scroll to bottom")
         main
-            .container
+            .container.slide
                 .row
-                    .col-md-4
-                        .card.bg-aquagreen
+                    .col-md-4.zoomIn
+                        .card.bg--aquagreen
                             h2 Learn
                             p Choose life stage
-                    .col-md-4
-                        .card.bg-blue
+                    .col-md-4.zoomIn
+                        .card.bg--blue
                             h2 Learn
                             p Choose life stage
-                    .col-md-4
-                        .card.bg-skyblue
+                    .col-md-4.zoomIn
+                        .card.bg--skyblue
                             h2 Learn
                             p Choose life stage
 
                 .row
                     .col-md-12
-                        h3.text-center The first step understanding where you are at
+                        h3.text-center The first step understanding where you are at 
                             | right now, and then the planning can begin.
 
                 .row
@@ -46,36 +57,77 @@ html.no-js(lang="")
                                 li.list-inline-item
                                     a.active(href="#") New parent
                                 li.list-inline-item
-                                    a.active(href="#") Growing family
+                                    a(href="#") Growing family
                                 li.list-inline-item
-                                    a.active(href="#") Up next, College
+                                    a(href="#") Up next, College
                                 li.list-inline-item
-                                    a.active(href="#") On Campus
+                                    a(href="#") On Campus
                                 li.list-inline-item
-                                    a.active(href="#") Grand. Parents
+                                    a(href="#") Grand. Parents
+            
+            .container-fluid.no--padding
+                .row.right--block.content-row
+                    .col-md-8.content-block-bg-wrapper.slide
+                        .content-block-bg-1.content-block-bg.slideupInLeft
+                        .content-block-bg-2.content-block-bg
+                        //- .new-parent-bg-3.new-parent
 
-                .row.new-parent
-                    .content-block.right--block
-                        h4 New parent
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?
+                    .col-md-4
+                        .content-block
+                            h4 New parent
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?
 
-                        span Baby steps, We'll help
+                            span Baby steps, We'll help
 
-                        a(href="#") Learn more
-                .row.new-parent
-                    .content-block.left--block
-                        h4 New parent
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?
+                            a(href="#") Learn more
+                            
+                .left--block--bg
+            .container-fluid
+                .row.left--block.content-row
+                    .col-md-4
+                        .content-block
+                            h4 New parent
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia ullam similique veritatis, nemo illum facilis autem quia dolor, repellendus recusandae, est cupiditate possimus. Dignissimos amet nam provident aliquam. Omnis?
 
-                        span Baby steps, We'll help
+                            span Baby steps, We'll help
 
-                        a(href="#") Learn more
+                            a(href="#") Learn more
+                    .col-md-8.content-block-bg-wrapper.slide
+                        .content-block-bg-1.content-block-bg.slideInRight
+                        //- .content-block-bg-2.content-block-bg
+                        //- .new-parent-bg-3.new-parent
+             
+            .container-fluid.sub-footer.no--padding.slide
+                .row.why-us-block.slideupIn
+                    .col-md-6.col.content-col
+                        .content-block
+                            h4 Why us?
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ratione cumque fugiat eos ipsam modi sit. Amet aspernatur totam nihil dolor asperiores. Minima, asperiores perspiciatis quis placeat earum ab maxime.
+                    .col-md-6.col.no--padding.aside--block--col
+                        .aside-block
+                            .aside-image
+                                img.img-fluid(src="../images/why-us.jpg" alt="why us?")
 
+                        .options-box.bg--white
+                            .inline-block
+                                h4 Easy to use investment options
+                                h4 A nationwide plan sponsored by Virgina
+                                    sup sm
+                                h4 Twice the tax benefits
 
+                            a(href="#") Learn more
+                    .footer-bg
+                
 
+        include includes/_footer.pug
+        section.copy-right.bg--black
+            .container-fluid.no--padding
+                .row
+                    .col-md-12.copy-right-col
+                        .text-center
+                            | Copyright @ 2018 Capital Group Corporate Inc.All rights reserved
 
-        
-        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        //- script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
         script(src="/../vhosts/capital-group/dist/vendors.min.js")
         script(src="/../vhosts/capital-group/dist/main.js")

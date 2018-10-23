@@ -1,0 +1,48 @@
+//search input styles
+// credits: Expandable Search Form with CSS3
+// A PEN BY Adrian
+// url: https://codepen.io/912lab/pen/LsplC
+
+input {
+  outline: none;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"] {
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png)
+    no-repeat 145px center;
+  border: none;
+  border-bottom: 1.5px solid #d1d1d1;
+  padding: 9px;
+  width: 150px;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 12px;
+  color: $black;
+}
+
+input:-moz-placeholder {
+  color: $black;
+}
+input::-webkit-input-placeholder {
+  color: $black;
+}
+
+//custom styles
+
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 0px 20px;
+}

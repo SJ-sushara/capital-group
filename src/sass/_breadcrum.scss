@@ -1,0 +1,23 @@
+//breadcrum styles
+.breadcrum-row {
+  // padding-top: 10px;
+  a {
+    color: $white;
+    font-size: 12px;
+  }
+  .col-md-4 {
+    left: 4%;
+  }
+  .col-md-8 {
+    right: 4%;
+  }
+  ul {
+    margin-bottom: 0px;
+    li {
+      padding: 5px 35px 6px;
+      &.login {
+        background-color: #0098e2;
+      }
+    }
+  }
+}

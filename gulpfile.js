@@ -61,7 +61,13 @@ gulp.task("compress", function(cb) {
 gulp.task("vendors-js", function() {
   return streamqueue(
     { objectMode: true },
-    gulp.src(`./src/js/vendors/bootstrap.min.js`)
+    gulp.src(`./src/js/vendors/bootstrap/bootstrap.min.js`),
+    gulp.src(`./src/js/vendors/jquery/jquery-3.1.1.min.js`),
+    gulp.src(`./src/js/vendors/greensock/TweenMax.min.js`),
+    gulp.src(`./src/js/vendors/scrollmagic/ScrollMagic.min.js`),
+    gulp.src(`./src/js/vendors/greensock/ScrollToPlugin.min.js`),
+    gulp.src(`./src/js/vendors/scrollmagic/animation.gsap.min.js`),
+    gulp.src(`./src/js/vendors/scrollmagic/debug.addIndicators.min.js`)
   )
     .pipe(concat("vendors.min.js"))
     .pipe(uglify())

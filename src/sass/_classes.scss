@@ -1,12 +1,30 @@
 //Classes
 
 //bg classes
-.bg-aquagreen {
+.bg--aquagreen {
   background-color: $aquagreen;
 }
-.bg-blue {
+.bg--blue {
   background-color: $blue;
 }
-.bg-skyblue {
+.bg--skyblue {
   background-color: $skyblue;
+}
+.bg--black {
+  background-color: $black;
+}
+.bg--white {
+  background-color: $white;
+}
+
+%margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .inline-block > * {
+//   display: inline-block;
+// }
+.no--padding {
+  padding: 0;
 }

@@ -1,0 +1,21 @@
+//navbar styles
+.navbar {
+  ul {
+    li {
+      a.nav-link {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  @include mq("lg") {
+    padding: 0px 25px;
+  }
+}
+.navbar-nav {
+  margin-bottom: 20px;
+}
